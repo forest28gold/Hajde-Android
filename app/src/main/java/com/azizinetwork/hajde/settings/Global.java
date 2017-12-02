@@ -25,17 +25,14 @@ public class Global {
     public static boolean                                               g_offerIsOn = false;
     public static boolean                                               g_cameraIsOn = false;
 
-    public static final String BACKEND_APP_ID                           = "139E089A-02CE-4977-FF83-86A71B6DAF00";   // Hajde
-    public static final String BACKEND_SECRET_KEY                       = "B028DF5C-029B-76BA-FF09-173BF13EC300";
-    public static final String BACKEND_VERSION_NUM                      = "v1";
+    public static final String BACKEND_APP_ID                           = "139E----------------------------AF00";   // Hajde
+    public static final String BACKEND_SECRET_KEY                       = "B028--------------------------3EC300";
+    public static final String BACKEND_VERSION_NUM                      = "v------";
 
-//    public static final String BACKEND_APP_ID                           = "369D443F-F691-EFF0-FF55-FB7F66E34900";
-//    public static final String BACKEND_SECRET_KEY                       = "12F88025-A029-C9B0-FF88-4F4066C25200";
-//    public static final String BACKEND_VERSION_NUM                      = "v1";
     public static final String BACKEND_SERVER_URL                       = "https://api.backendless.com";
 
-    public static final String GCM_SERVER_API_Key                       = "AIzaSyD396gucgvHyh4EPBFBmsIg8OkYsiRyuVk";
-    public static final String GCM_SENDER_ID                            = "605598898300";
+    public static final String GCM_SERVER_API_Key                       = "AIzaSy---------------------------iRyuVk";
+    public static final String GCM_SENDER_ID                            = "60------------300";
 
     public static final String HAJDE_FACEBOOK_LINK                      = "https://www.facebook.com/hajdeapp";
     public static final String HAJDE_TWITTER_LINK                       = "https://twitter.com/Hajdeapp";
@@ -114,7 +111,7 @@ public class Global {
     public static final String SELECT_MY_VOTES                          = "select_my_votes";
 
     public static final String MESSAGE_CHANNEL                          = "default";
-    public static final String HAJDE_PASSWORD                           = "2D498E77-5D46-4205-BCCC-2558D2EDCA0D";
+    public static final String HAJDE_PASSWORD                           = "2D--------------------DCA0D";
 
     public static final int NEARBY_RADIUS                               = 20;
     public static final String ADMIN_EMAIL                              = "hajde@hajde.com";
@@ -151,8 +148,8 @@ public class Global {
 	 * Local DB Info.
 	 */
 
-    public static final String LOCAL_DB_NAME                            = "azizinetworkhajde.db";
-    public static final String LOCAL_TABLE_USER                         = "hajde_user_table";
+    public static final String LOCAL_DB_NAME                            = "aziz-------------b";
+    public static final String LOCAL_TABLE_USER                         = "haj--------------le";
 
     public static final String LOCAL_FIELD_USER_ID                      = "userID";
     public static final String LOCAL_FIELD_DEVICE_UUID                  = "deviceUUID";
