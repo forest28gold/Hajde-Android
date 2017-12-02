@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainTabBar"/>
+
+    <com.startsmake.mainnavigatetabbar.widget.MainNavigateTabBar
+        android:id="@+id/mainTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:containerId="@+id/main_container"
+        app:navigateTabSelectedTextColor="@color/comui_tab_text_color"
+        app:navigateTabTextColor="@color/comui_tab_text_color"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainTabBar"
+        android:background="@mipmap/comui_bar_top_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/tab_post_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPublish"
+            android:src="@mipmap/comui_tab_post"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_new">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView_overlay"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/new_overlay"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/close"
+            android:id="@+id/imageButton_close"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/new_post"
+            android:id="@+id/imageButton_post"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/imageButton_close"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/new_voice"
+            android:id="@+id/imageButton_voice"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/imageButton_close"
+            android:layout_toRightOf="@+id/imageButton_close"
+            android:layout_toEndOf="@+id/imageButton_close" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/new_image"
+            android:id="@+id/imageButton_image"
+            android:background="@android:color/transparent"
+            android:layout_above="@+id/imageButton_close"
+            android:layout_toLeftOf="@+id/imageButton_close"
+            android:layout_toStartOf="@+id/imageButton_close" />
+
+    </RelativeLayout>
+</RelativeLayout>

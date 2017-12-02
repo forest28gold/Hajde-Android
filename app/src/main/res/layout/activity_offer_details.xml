@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_offer_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.azizinetwork.hajde.offers.OfferDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_title">
+
+        <TextView
+            android:text="@string/offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_title"
+            android:textSize="@dimen/title_text"
+            android:typeface="normal"
+            android:textColor="@color/dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/button_back"
+            android:background="@color/transparent"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="@string/offers"
+            android:textAllCaps="false"
+            android:textColor="@color/dark"
+            android:typeface="sans"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/menu_back"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button_back"
+            android:layout_alignStart="@+id/button_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeLayout_divider2"
+            android:background="@color/cardview_shadow_start_color">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relativeLayout_title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_empty"
+        android:layout_height="15dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_empty"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_offer">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@mipmap/offer_image"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView_offer"
+            android:scaleType="centerCrop"
+            android:layout_height="200dp" />
+
+        <RelativeLayout
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/relativeLayout_off"
+            android:background="@drawable/round_offer"
+            android:layout_width="80dp">
+
+            <TextView
+                android:text="10% off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_off"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_discount"
+            android:background="@drawable/round_offer_discount"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/relativeLayout_off"
+            android:layout_alignEnd="@+id/relativeLayout_off"
+            android:layout_width="120dp">
+
+            <TextView
+                android:text="$2495.-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_price"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:text="before $2999.-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_before"
+                android:textColor="@color/white"
+                android:layout_below="@+id/textView_price"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@+id/imageView_offer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="60dp"
+            android:background="@color/transparent_offer"
+            android:id="@+id/relativeLayout_content">
+
+            <TextView
+                android:text="Samsung Galaxy S6 Edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_title"
+                android:textSize="15sp"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Phone, gadged, smartphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content"
+                android:textSize="12sp"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textView_content_title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView_content_title"
+                android:layout_alignStart="@+id/textView_content_title" />
+
+        </RelativeLayout>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_offer"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Samsung Galaxy S6 Edge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_offer_title"
+            android:textSize="16sp"
+            android:typeface="normal"
+            android:textColor="@color/comui_tab_text_color"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:text="Phone spec, price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_spec_title"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/dark"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView_offer_title"
+            android:layout_alignLeft="@+id/textView_offer_title"
+            android:layout_alignStart="@+id/textView_offer_title" />
+
+        <TextView
+            android:text="Phone spec, price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_spec"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/dark"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textView_spec_title"
+            android:layout_alignLeft="@+id/textView_spec_title"
+            android:layout_alignStart="@+id/textView_spec_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

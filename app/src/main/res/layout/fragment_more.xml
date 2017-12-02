@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@mipmap/logo_gray"
+    android:id="@+id/imageView_logo"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="35dp" />
+
+<Button
+    android:text="@string/love_hajde"
+    android:layout_width="@dimen/more_btn_weight"
+    android:layout_height="@dimen/more_btn_height"
+    android:id="@+id/button_love"
+    android:background="@drawable/round_love"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintTop_toBottomOf="@+id/imageView_logo"
+    android:layout_marginTop="11dp"
+    android:layout_below="@+id/imageView_logo"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:text="@string/whats_karma"
+    android:layout_width="@dimen/more_btn_weight"
+    android:layout_height="@dimen/more_btn_height"
+    android:id="@+id/button_whats"
+    android:background="@drawable/round_whats"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="@+id/button_love"
+    app:layout_constraintTop_toBottomOf="@+id/button_love"
+    app:layout_constraintRight_toRightOf="@+id/button_love"
+    android:layout_marginTop="11dp"
+    android:layout_below="@+id/button_love"
+    android:layout_alignLeft="@+id/button_love"
+    android:layout_alignStart="@+id/button_love" />
+
+<Button
+    android:text="@string/invite_friends"
+    android:layout_width="@dimen/more_btn_weight"
+    android:layout_height="@dimen/more_btn_height"
+    android:id="@+id/button_invite"
+    android:background="@drawable/round_invite"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="@+id/button_love"
+    app:layout_constraintTop_toBottomOf="@+id/button_whats"
+    app:layout_constraintRight_toRightOf="@+id/button_love"
+    app:layout_constraintHorizontal_bias="0.0"
+    android:layout_below="@+id/button_whats"
+    android:layout_alignLeft="@+id/button_whats"
+    android:layout_alignStart="@+id/button_whats"
+    android:layout_marginTop="13dp" />
+
+<Button
+    android:text="@string/feedback"
+    android:layout_width="@dimen/more_btn_weight"
+    android:layout_height="@dimen/more_btn_height"
+    android:id="@+id/button_feedback"
+    android:background="@drawable/round_feedback"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="@+id/button_love"
+    app:layout_constraintTop_toBottomOf="@+id/button_invite"
+    app:layout_constraintRight_toRightOf="@+id/button_love"
+    app:layout_constraintHorizontal_bias="0.0"
+    android:layout_marginTop="13dp"
+    android:layout_below="@+id/button_invite"
+    android:layout_alignLeft="@+id/textView_version"
+    android:layout_alignStart="@+id/textView_version" />
+
+<Button
+    android:text="@string/legal_agreements"
+    android:layout_width="@dimen/more_btn_weight"
+    android:layout_height="@dimen/more_btn_height"
+    android:id="@+id/button_legal"
+    android:background="@drawable/round_legal"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintLeft_toLeftOf="@+id/button_love"
+    app:layout_constraintTop_toBottomOf="@+id/button_feedback"
+    app:layout_constraintRight_toRightOf="@+id/button_love"
+    app:layout_constraintHorizontal_bias="0.0"
+    android:layout_below="@+id/button_feedback"
+    android:layout_alignLeft="@+id/button_feedback"
+    android:layout_alignStart="@+id/button_feedback"
+    android:layout_marginTop="11dp" />
+
+<TextView
+    android:text="@string/like_follow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView_like_follow"
+    app:layout_constraintTop_toBottomOf="@+id/button_legal"
+    android:layout_below="@+id/button_legal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_google"
+    android:background="@mipmap/follow_google"
+    android:minHeight="0dp"
+    android:minWidth="0dp"
+    android:layout_marginLeft="-20dp"
+    app:layout_constraintTop_toBottomOf="@+id/textView_like_follow"
+    android:layout_alignBaseline="@+id/button_facebook"
+    android:layout_alignBottom="@+id/button_facebook"
+    android:layout_toRightOf="@+id/button_facebook"
+    android:layout_toEndOf="@+id/button_facebook" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_facebook"
+    android:background="@mipmap/follow_facebook"
+    android:minHeight="0dp"
+    android:minWidth="0dp"
+    app:layout_constraintTop_toBottomOf="@+id/textView_like_follow"
+    app:layout_constraintRight_toLeftOf="@+id/button_twitter"
+    android:layout_below="@+id/textView_like_follow"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="17dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_twitter"
+    android:background="@mipmap/follow_twitter"
+    android:minHeight="0dp"
+    android:minWidth="0dp"
+    android:layout_marginRight="-20dp"
+    app:layout_constraintTop_toBottomOf="@+id/textView_like_follow"
+    android:layout_alignBaseline="@+id/button_facebook"
+    android:layout_alignBottom="@+id/button_facebook"
+    android:layout_toLeftOf="@+id/button_facebook"
+    android:layout_toStartOf="@+id/button_facebook" />
+
+<TextView
+    android:text="@string/app_version"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView_version"
+    app:layout_constraintTop_toBottomOf="@+id/button_legal"
+    android:layout_marginTop="15dp"
+    android:layout_below="@+id/button_facebook"
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold" />
+
+<Button
+    android:text="@string/english"
+    android:layout_width="65dp"
+    android:layout_height="40dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/button_laguage"
+    android:background="@color/transparent"
+    android:textAllCaps="false"
+    android:gravity="center_vertical"
+    android:minHeight="0dp"
+    android:minWidth="0dip"
+    android:textColor="@color/background" />
+
+<TextView
+    android:text="@string/language"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/button_laguage"
+    android:layout_toStartOf="@+id/button_laguage"
+    android:id="@+id/textView_language"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical"
+    android:layout_alignBottom="@+id/button_laguage" />
+
+<RelativeLayout
+    android:layout_below="@+id/button_laguage"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_height="80dp"
+    android:layout_width="90dp"
+    android:id="@+id/relativeLayout_lang">
+
+    <Button
+        android:text="@string/english"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button_eng"
+        android:background="@color/transparent"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:minHeight="0dp"
+        android:minWidth="0dip"
+        android:textColor="@color/dark" />
+
+    <Button
+        android:text="@string/albanian"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_alb"
+        android:background="@color/transparent"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:minHeight="0dp"
+        android:minWidth="0dip"
+        android:textColor="@color/dark"
+        android:layout_below="@+id/button_eng"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/textView_version"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_height="25dp">
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="comui_tab_text_color">#ff333333</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="background">#36d7b7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark">#767575</color>
+    <color name="gray">#d3d2d2</color>
+    <color name="transparent_offer">#77000000</color>
+    <color name="transparent_camera">#33000000</color>
+    <color name="transparent_grey">#50020202</color>
+
+    <color name="orange">#e87206</color>
+    <color name="blue">#008ace</color>
+    <color name="green">#05ff05</color>
+    <color name="red">#cb0e05</color>
+
+    <color name="post_color1">#36d7b7</color>
+    <color name="post_color2">#fece4c</color>
+    <color name="post_color3">#aab2bd</color>
+    <color name="post_color4">#fe4c4c</color>
+    <color name="post_color5">#6686ff</color>
+    <color name="post_color6">#ff78d4</color>
+    <color name="post_color7">#fe824c</color>
+    <color name="post_color8">#50e0f5</color>
+    <color name="post_color9">#9878ff</color>
+    <color name="post_color10">#43b9f6</color>
+    <color name="post_color11">#43f6d6</color>
+
+    <color name="comment_color1">#6de1ca</color>
+    <color name="comment_color2">#f8d882</color>
+    <color name="comment_color3">#c2cad6</color>
+    <color name="comment_color4">#ed7d7d</color>
+    <color name="comment_color5">#849eff</color>
+    <color name="comment_color6">#fe99de</color>
+    <color name="comment_color7">#fe9669</color>
+    <color name="comment_color8">#7decfc</color>
+    <color name="comment_color9">#ac92ff</color>
+    <color name="comment_color10">#6cccff</color>
+    <color name="comment_color11">#78f6df</color>
+
+
+
+
+</resources>

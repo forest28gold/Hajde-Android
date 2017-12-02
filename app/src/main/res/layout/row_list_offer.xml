@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_empty"
+        android:layout_height="15dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_empty"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_offer">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@mipmap/offer_image"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView_offer"
+            android:scaleType="centerCrop"
+            android:layout_height="200dp" />
+
+        <RelativeLayout
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/relativeLayout_off"
+            android:background="@drawable/round_offer"
+            android:layout_width="80dp">
+
+            <TextView
+                android:text="10% off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_off"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_discount"
+            android:background="@drawable/round_offer_discount"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/relativeLayout_off"
+            android:layout_alignEnd="@+id/relativeLayout_off"
+            android:layout_width="120dp">
+
+            <TextView
+                android:text="$2495.-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_price"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:text="before $2999.-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_before"
+                android:textColor="@color/white"
+                android:layout_below="@+id/textView_price"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@+id/imageView_offer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="60dp"
+            android:background="@color/transparent_offer"
+            android:id="@+id/relativeLayout_content">
+
+            <TextView
+                android:text="Samsung Galaxy S6 Edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content_title"
+                android:textSize="15sp"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Phone, gadged, smartphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_content"
+                android:textSize="12sp"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textView_content_title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView_content_title"
+                android:layout_alignStart="@+id/textView_content_title" />
+
+        </RelativeLayout>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

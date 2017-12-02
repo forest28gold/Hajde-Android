@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invite_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.azizinetwork.hajde.more.InviteFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_title"
+        android:background="@color/white">
+
+        <TextView
+            android:text="@string/invite_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_title"
+            android:textSize="@dimen/title_text"
+            android:typeface="normal"
+            android:textColor="@color/dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/button_back"
+            android:background="@color/transparent"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="@string/btn_back"
+            android:textAllCaps="false"
+            android:textColor="@color/dark"
+            android:typeface="sans"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/menu_back"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button_back"
+            android:layout_alignStart="@+id/button_back" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/button_send"
+            android:background="@color/transparent"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/dark"
+            android:typeface="sans"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignTop="@+id/button_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeLayout_divider1"
+            android:background="@color/cardview_shadow_start_color">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"
+        android:layout_below="@+id/relativeLayout_title"
+        android:background="@color/white" />
+
+</RelativeLayout>

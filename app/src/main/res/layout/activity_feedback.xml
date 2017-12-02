@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.azizinetwork.hajde.more.FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_title">
+
+        <TextView
+            android:text="@string/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_title"
+            android:textSize="@dimen/title_text"
+            android:typeface="normal"
+            android:textColor="@color/dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/button_back"
+            android:background="@color/transparent"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="@string/btn_back"
+            android:textAllCaps="false"
+            android:textColor="@color/dark"
+            android:typeface="sans"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/menu_back"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button_back"
+            android:layout_alignStart="@+id/button_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cardview_shadow_start_color"
+            android:id="@+id/relativeLayout_divider">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_subject">
+
+        <TextView
+            android:text="@string/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_subject"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/tab_text_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:layout_below="@+id/textView_subject"
+            android:layout_alignLeft="@+id/textView_subject"
+            android:layout_alignStart="@+id/textView_subject"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/editText_subject"
+            android:maxLines="1"
+            android:hint="@string/subject_title_placeholder"
+            android:textColor="@color/comui_tab_text_color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/post_color3"
+            android:layout_below="@+id/editText_subject"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="2dp"
+            android:id="@+id/relativeLayout_divider1">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_from"
+        android:layout_below="@+id/relativeLayout_subject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="@string/from_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_from"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/tab_text_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:layout_below="@+id/textView_from"
+            android:layout_alignLeft="@+id/textView_from"
+            android:layout_alignStart="@+id/textView_from"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/editText_from"
+            android:maxLines="1"
+            android:hint="@string/your_email"
+            android:textColor="@color/comui_tab_text_color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/post_color3"
+            android:layout_below="@+id/editText_from"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="2dp"
+            android:id="@+id/relativeLayout_divider2">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_to"
+        android:layout_below="@+id/relativeLayout_from"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="@string/to_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_to"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/tab_text_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:layout_below="@+id/textView_to"
+            android:layout_alignLeft="@+id/textView_to"
+            android:layout_alignStart="@+id/textView_to"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/editText_to"
+            android:maxLines="1"
+            android:hint="@string/support_email"
+            android:inputType="textEmailAddress"
+            android:text="@string/support_email"
+            android:textColor="@color/comui_tab_text_color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/post_color3"
+            android:layout_below="@+id/editText_to"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="2dp"
+            android:id="@+id/relativeLayout_divider3">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_message"
+        android:layout_below="@+id/relativeLayout_to"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button_send">
+
+        <TextView
+            android:text="@string/from_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_message"
+            android:textSize="14sp"
+            android:typeface="normal"
+            android:textColor="@color/tab_text_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText_message"
+            android:layout_below="@+id/textView_message"
+            android:layout_alignLeft="@+id/textView_message"
+            android:layout_alignStart="@+id/textView_message"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/enter_message"
+            android:textSize="15sp"
+            android:textColor="@color/comui_tab_text_color"
+            android:background="@color/transparent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_send"
+        android:background="@color/background"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/title_text" />
+
+</RelativeLayout>

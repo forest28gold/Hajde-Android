@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hajde</string>
+
+    <string name="share_thought">Share your thoughts, read new posts,\n reviews and images from people nearby.\n All anonimously!</string>
+    <string name="by_clicking">By clicking Get Started you accept</string>
+    <string name="terms_use">terms of use</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">privacy policy</string>
+
+    <string name="tab_home">Ballina</string>
+    <string name="tab_profile">Profili im</string>
+    <string name="tab_shop">Karma shop</string>
+    <string name="tab_hajde">Me shume</string>
+
+    <string name="your_karma">Karma yte</string>
+    <string name="tab_newest">Me te rejat</string>
+    <string name="tab_most_commented">Me te komentuara</string>
+    <string name="tab_most_votes">Me te votuara</string>
+
+    <string name="my_posts">Postimet e mia</string>
+    <string name="my_comments">Komentet e mia</string>
+    <string name="my_votes">Votimet e mia</string>
+    <string name="time_spent">Koha e kaluar ne Hajde</string>
+    <string name="days">Dite</string>
+    <string name="hours">Ore</string>
+    <string name="minutes">Minuta</string>
+
+    <string name="discover_offers">Zbulo ofertat</string>
+    <string name="my_karma">Karma ime</string>
+    <string name="btn_back">Kthehu</string>
+    <string name="my_comment">Komentet e mia</string>
+
+    <string name="language">Gjuha</string>
+    <string name="english">Anglisht</string>
+    <string name="albanian">Shqip</string>
+
+    <string name="love_hajde">E dua Hajde</string>
+    <string name="whats_karma">Ceshte Karma?</string>
+    <string name="invite_friends">Fto miqte</string>
+    <string name="feedback">Feedback</string>
+    <string name="legal_agreements">Marreveshjet ligjore</string>
+    <string name="like_follow">Na ndiqni ne</string>
+    <string name="app_version">Hajde App version 1.1.4</string>
+    <string name="please_wait">Te lutem prit ...</string>
+
+    <string name="offers">Ofertat</string>
+    <string name="post_details">Detajet e postimit</string>
+    <string name="enter_comment">Dergo koment...</string>
+    <string name="send">Dergo</string>
+    <string name="save">Ruaj</string>
+    <string name="goto_offer">Vazhdo tek ofertat!</string>
+    <string name="create_post">Krijo nje postim</string>
+    <string name="record_sound">Incizo nje tingull</string>
+    <string name="post">Posto</string>
+    <string name="swipe_left_right">Leviz majtas ose djathtas per te ndryshuar ngjyren</string>
+    <string name="post_placeholder">Ndaje mendimin tende me njerez rreth 20 kilometrash...</string>
+    <string name="tap_hold">Prekni dhe mbani</string>
+    <string name="recording">Duke incizuar...</string>
+    <string name="recording_button">butonin e incizimit per te filluar</string>
+    <string name="max_second">Nje maksimum prej 15 sekonda jane te lejuar!</string>
+    <string name="preview_recording">Ju tani mundeni te degjoni incizimin</string>
+
+    <string name="subject">Subject</string>
+    <string name="subject_title_placeholder">Subject title goes here</string>
+    <string name="from_email">From (your email address)</string>
+    <string name="your_email">youremail@here.com</string>
+    <string name="to_email">To : Hajde Feedback &amp; Support</string>
+    <string name="support_email">support@hajdeapp.com</string>
+    <string name="message">Mesazh</string>
+    <string name="enter_message">shkruaje mesazhin</string>
+    <string name="general_rules">We can change general rules, terms of use and conditions at anytime. Whenever general rules are changed, we will notify our users about changes.</string>
+
+    <string name="please_tap">Preke foton per te aktualizuar</string>
+    <string name="cant_load_terms">Nuk mund te hapet Marreveshjet ligjore</string>
+    <string name="cant_load_karma">Nuk mund te hapet Ceshte Karma</string>
+    <string name="cant_load_legal">Nuk mund te hapet Marreveshjet ligjore</string>
+    <string name="cant_load_privacy">Nuk mund te hapet Privacy Policy</string>
+    <string name="no_newest">Nuk ka me te rejat</string>
+    <string name="no_commented">Nuk ka me te komentuara</string>
+    <string name="no_vote">Nuk ka me te votuara</string>
+    <string name="no_karma">Nuk ka Karma</string>
+    <string name="no_my_votes">Nuk ka vota prej meje</string>
+    <string name="no_my_comment">Nuk ka komente te mia</string>
+    <string name="no_offers">Nuk ka oferta</string>
+
+    <string name="alert">Alarm</string>
+    <string name="ok">OK</string>
+    <string name="karma">Karma</string>
+    <string name="alert_login">Login i dështuar. Ju lutemi provoni përsëri.</string>
+    <string name="alert_network_error">lidhja e rrjetit eshtë e deshtuar. Ju lutem kontrolloni gjendjen e rrjetit dhe provoni perseri!</string>
+    <string name="abuse">Abuzim</string>
+    <string name="alert_enter_comment">Ju lutem shkruani koment.</string>
+    <string name="alert_new_comment_failed">Komenti eshte deshtuar. Ju lutemi të provoni përsëri!</string>
+    <string name="karma_increased">Karma yte eshte rritur</string>
+    <string name="karma_from_posting">Ju fituat Karma nga postimi</string>
+    <string name="karma_from_commenting">Ju fituat Karma nga komentimi</string>
+    <string name="karma_from_upvote_post">Ju fituat Karma nga votimi nje postimit</string>
+    <string name="karma_from_downvote_post">Ju fituat karma nga votimi nje postimit</string>
+    <string name="karma_from_upvote_comment">Ju fituat Karma nga votimi nje komentit</string>
+    <string name="karma_from_downvote_comment">Ju fituat Karma nga votimi nje komentit</string>
+    <string name="karma_from_report_post">Ju fituat Karma nga raportimi nje postimit</string>
+    <string name="karma_from_report_comment">Ju fituat Karma nga raportimi nje komentit</string>
+    <string name="karma_decreased">Ju humbet Karma</string>
+    <string name="karma_someone_downvote_comment">Ju humbet Karma pershkak nje votimit ne komentin e juaj</string>
+    <string name="karma_someone_downvote_post">Ju humbet Karma pershkak nje votimit ne postimin e juaj</string>
+    <string name="karma_comment_5_downvotes">Ju humbet Karma pershkak komenti juaj ka arrit -5 ne votime</string>
+    <string name="karma_post_5_downvotes">Ju humbet Karma pershkak postimi juaj ka arrit -5 ne votime</string>
+    <string name="karma_daily_add">Karma pike te perditshme</string>
+    <string name="karma_daily_login">Ju fituat Karma nga hyrjen te perditshme</string>
+    <string name="karma_delete_comment">Ju humbet Karma pershkak nje raportimit e komentit tuaj</string>
+    <string name="karma_delete_post">Ju humbet Karma pershkak nje raportimit e postimit tuaj</string>
+    <string name="ago">me pare</string>
+    <string name="retake">Perserit</string>
+    <string name="cancel">Anulo</string>
+    <string name="use_photo">Zgjedhe foton</string>
+    <string name="saved_successfully">Ruajtur me sukses</string>
+    <string name="save_failed">Image ruaj si të dështuar</string>
+    <string name="alert_new_posting_failed">Postimi ka deshtuar. Provo perseri!</string>
+    <string name="alert_input_post">Te lutem postoni input.</string>
+    <string name="recording_end">Incizimi ka perfunduar.</string>
+    <string name="alert_record_audio">Incizo tingullin perseri.</string>
+    <string name="off">zbritje</string>
+    <string name="before">Me pare</string>
+    <string name="alert_input_subject">Te lutem trego subject.</string>
+    <string name="alert_input_from_email">Te lutem trego email.</string>
+    <string name="alert_input_from_email_correctly">Te lutem trego emailin sakte.</string>
+    <string name="alert_input_to_email">Te lutem trego email.</string>
+    <string name="alert_input_to_email_correctly">Te lutem trego emailin sakte.</string>
+    <string name="alert_input_message">Te lutem trego mesazhin.</string>
+    <string name="alert_device_doesnt_support_sms">Pajisja juaj nuk e mbeshtet SMS!</string>
+    <string name="alert_failed_sms">Deshtoi per te derguar SMS!</string>
+    <string name="signup_hajde">Regjistrohu ne Hajde.</string>
+    <string name="alert_invite_sent">Ju keni derguar ftese per miqte tuaj me sukses!</string>
+    <string name="ios_post_deleted">Postimi yt eshte fshire</string>
+    <string name="ios_comment_deleted">Komenti yt eshte fshire</string>
+    <string name="press_again_exit_app">Ju lutem shtypni një herë për të dalë nga programi</string>
+
+    <string name="need_grant">duhet te jape qasje ne</string>
+    <string name="btn_continue">Vazhdoj</string>
+    <string name="perm_camera">Kamere</string>
+    <string name="perm_contacts">Kontakte</string>
+    <string name="perm_location">Vend</string>
+    <string name="perm_microphone">Mikrofon</string>
+    <string name="perm_phone">Telefon</string>
+    <string name="perm_sms">SMS</string>
+    <string name="perm_storage">Ruajtje</string>
+
+</resources>

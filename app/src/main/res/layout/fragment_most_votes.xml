@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qbw.customview.RefreshLoadMoreLayout
+        android:id="@+id/refreshloadmore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.qbw.customview.RefreshLoadMoreLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_no_result"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/logo_gray"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageButton_refresh"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:text="@string/no_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_no_result"
+            android:layout_above="@+id/textView_tap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:text="@string/please_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tap"
+            android:layout_marginBottom="18dp"
+            android:textColor="@color/bgColor_overlay"
+            android:layout_above="@+id/imageButton_refresh"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

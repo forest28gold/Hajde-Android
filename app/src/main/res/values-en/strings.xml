@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Hajde</string>
+
+    <string name="share_thought">Share your thoughts, read new posts,\n reviews and images from people nearby.\n All anonimously!</string>
+    <string name="by_clicking">By clicking Get Started you accept</string>
+    <string name="terms_use">terms of use</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">privacy policy</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">My profile</string>
+    <string name="tab_shop">Karma shop</string>
+    <string name="tab_hajde">More</string>
+
+    <string name="your_karma">Your Karma</string>
+    <string name="tab_newest">Newest</string>
+    <string name="tab_most_commented">Most Commented</string>
+    <string name="tab_most_votes">Most Votes</string>
+
+    <string name="my_posts">My posts</string>
+    <string name="my_comments">My comments</string>
+    <string name="my_votes">My votes</string>
+    <string name="time_spent">Time spent on Hajde</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+
+    <string name="discover_offers">Discover Offers</string>
+    <string name="my_karma">My Karma</string>
+    <string name="btn_back">Back</string>
+    <string name="my_comment">My comment</string>
+
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="albanian">Albanian</string>
+
+    <string name="love_hajde">I love Hajde</string>
+    <string name="whats_karma">What\'s Karma?</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="feedback">Feedback</string>
+    <string name="legal_agreements">Legal Agreements</string>
+    <string name="like_follow">Like us and follow via</string>
+    <string name="app_version">Hajde App version 1.1.4</string>
+    <string name="please_wait">Please wait ...</string>
+
+    <string name="offers">Offers</string>
+    <string name="post_details">Post details</string>
+    <string name="enter_comment">Enter comment...</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="goto_offer">Go to the offers!</string>
+    <string name="create_post">Create a post</string>
+    <string name="record_sound">Record a sound</string>
+    <string name="post">Post</string>
+    <string name="swipe_left_right">Swipe left or right to change post color</string>
+    <string name="post_placeholder">Share your thoughts with people in the radius of 20 kilometers...</string>
+    <string name="tap_hold">Tap and hold</string>
+    <string name="recording">Recording...</string>
+    <string name="recording_button">recording button to start</string>
+    <string name="max_second">A maximum of 15 seconds are allowed!</string>
+    <string name="preview_recording">You can now preview your recording</string>
+
+    <string name="subject">Subject</string>
+    <string name="subject_title_placeholder">Subject title goes here</string>
+    <string name="from_email">From (your email address)</string>
+    <string name="your_email">youremail@here.com</string>
+    <string name="to_email">To : Hajde Feedback &amp; Support</string>
+    <string name="support_email">support@hajdeapp.com</string>
+    <string name="message">Message</string>
+    <string name="enter_message">Enter message</string>
+    <string name="general_rules">We can change general rules, terms of use and conditions at anytime. Whenever general rules are changed, we will notify our users about changes.</string>
+
+    <string name="please_tap">Please tap image to refresh</string>
+    <string name="cant_load_terms">Can\'t load Terms of Use</string>
+    <string name="cant_load_karma">Can\'t load What\'s Karma</string>
+    <string name="cant_load_legal">Can\'t load Legal Agreements</string>
+    <string name="cant_load_privacy">Can\'t load Privacy policy</string>
+    <string name="no_newest">There are no newest</string>
+    <string name="no_commented">There are no most commented</string>
+    <string name="no_vote">There are no most votes</string>
+    <string name="no_karma">There are no your karma</string>
+    <string name="no_my_votes">There are no my votes</string>
+    <string name="no_my_comment">There are no my comment</string>
+    <string name="no_offers">There are no offers</string>
+
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="karma">Karma</string>
+    <string name="alert_login">Login is failed. Please try again.</string>
+    <string name="alert_network_error">Network connection is failed. Please check your network state and try again!</string>
+    <string name="abuse">Abuse</string>
+    <string name="alert_enter_comment">Please enter comment.</string>
+    <string name="alert_new_comment_failed">New Comment is failed. Please try again!</string>
+    <string name="karma_increased">Your Karma has been increased</string>
+    <string name="karma_from_posting">You received Karma from posting</string>
+    <string name="karma_from_commenting">You received karma from commenting</string>
+    <string name="karma_from_upvote_post">You received karma from upvote a post</string>
+    <string name="karma_from_downvote_post">You received karma from downvote a post</string>
+    <string name="karma_from_upvote_comment">You received karma from upvote a comment</string>
+    <string name="karma_from_downvote_comment">You received karma from downvote a comment</string>
+    <string name="karma_from_report_post">You received Karma from reporting of a post</string>
+    <string name="karma_from_report_comment">You received Karma from reporting of a comment</string>
+    <string name="karma_decreased">Your Karma has been decreased</string>
+    <string name="karma_someone_downvote_comment">You lost Karma because someone downvote your comment</string>
+    <string name="karma_someone_downvote_post">You lost Karma because someone downvote your post</string>
+    <string name="karma_comment_5_downvotes">You lost Karma because your comment reached -5 downvotes</string>
+    <string name="karma_post_5_downvotes">You lost Karma because your post reached -5 downvotes</string>
+    <string name="karma_daily_add">Daily Karma add</string>
+    <string name="karma_daily_login">You received karma from daily login</string>
+    <string name="karma_delete_comment">You lost karma because someone report your comment</string>
+    <string name="karma_delete_post">You lost karma because someone report your post</string>
+    <string name="ago">ago</string>
+    <string name="retake">Retake</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_photo">Use Photo</string>
+    <string name="saved_successfully">Saved successfully</string>
+    <string name="save_failed">Image save is failed</string>
+    <string name="alert_new_posting_failed">New posting is failed. Please try again!</string>
+    <string name="alert_input_post">Please input post.</string>
+    <string name="recording_end">Recording is end.</string>
+    <string name="alert_record_audio">Please record audio again.</string>
+    <string name="off">off</string>
+    <string name="before">before</string>
+    <string name="alert_input_subject">Please input subject.</string>
+    <string name="alert_input_from_email">Please input your email address.</string>
+    <string name="alert_input_from_email_correctly">Please input your email correctly.</string>
+    <string name="alert_input_to_email">Please input to email.</string>
+    <string name="alert_input_to_email_correctly">Please input to email correctly.</string>
+    <string name="alert_input_message">Please input message.</string>
+    <string name="alert_device_doesnt_support_sms">Your device doesn\'t support SMS!</string>
+    <string name="alert_failed_sms">Failed to send SMS!</string>
+    <string name="signup_hajde">Please sign up to Hajde app.</string>
+    <string name="alert_invite_sent">You sent invitation to your friends successfully!</string>
+    <string name="ios_post_deleted">Your post is deleted</string>
+    <string name="ios_comment_deleted">Your comment is deleted</string>
+    <string name="press_again_exit_app">Please press once to exit the program</string>
+
+    <string name="need_grant">needs to grant access to</string>
+    <string name="btn_continue">Continue</string>
+    <string name="perm_camera">Camera</string>
+    <string name="perm_contacts">Contacts</string>
+    <string name="perm_location">Location</string>
+    <string name="perm_microphone">Microphone</string>
+    <string name="perm_phone">Phone</string>
+    <string name="perm_sms">SMS</string>
+    <string name="perm_storage">Storage</string>
+
+</resources>
+

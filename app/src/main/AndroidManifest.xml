@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.azizinetwork.hajde"
+    android:versionCode="5"
+    android:versionName="1.1.3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.azizinetwork.hajde.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <!-- for android -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <permission
+        android:name="com.azizinetwork.hajde.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <receiver android:name="com.backendless.push.BackendlessBroadcastReceiver" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
+        <receiver
+            android:name=".settings.PushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.azizinetwork.hajde" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.GetStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newpost.NewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newpost.NewPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newpost.NewVoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newpost.PreviewRecordingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newpost.ImageEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyKarmaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.TermsOfUseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.WhatsKarmaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.InviteFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".more.LegalAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offers.OffersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".offers.OfferDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PostDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotoDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myposts.MyCommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myposts.MyVotesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myposts.MyPostsActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".settings.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".settings.KarmaService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

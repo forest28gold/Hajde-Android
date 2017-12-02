@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.azizinetwork.hajde.newpost.ImageEditActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imageView_post"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="centerCrop" />
+
+    <com.azizinetwork.hajde.sticker.StickerView
+        android:id="@+id/sticker_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    <me.panavtec.drawableview.DrawableView
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_overlay">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editText_text"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center"
+        android:background="@color/transparent_dark" />
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_top" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_top"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="70dp">
+
+        <ImageButton
+            android:id="@+id/imageButton_close"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/camera_close"
+            android:layout_height="40dp"
+            android:layout_width="40dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_color"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/imageButton_paint"
+            android:layout_alignLeft="@+id/imageButton_paint"
+            android:layout_alignStart="@+id/imageButton_paint"
+            android:layout_centerInParent="true"
+            android:src="@color/blue"
+            app:civ_border_color="#ffffffff"
+            app:civ_border_width="2dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_paint"
+            android:layout_width="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/edit_color"
+            android:layout_height="45dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_text"
+            android:layout_width="35dp"
+            android:background="@mipmap/camera_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:layout_height="35dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_emoji"
+            android:layout_width="35dp"
+            android:background="@mipmap/camera_emoji"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button_image_send"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@color/transparent"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right|center_vertical" />
+
+        <Button
+            android:id="@+id/button_image_save"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@color/transparent"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relativeLayout_bottom"
+        android:id="@+id/relativeLayout_middle">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_emoji"
+            android:visibility="invisible">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView0"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView1"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView2"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView3"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView4"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView5"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView6"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView7"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView8"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView9"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView10"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView11"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView12"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView13"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView14"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView15"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView16"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView17"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView18"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView19"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView20"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView21"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView22"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView23"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView24"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView25"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView26"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView27"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView2"
+                android:layout_toEndOf="@+id/emojiTextView2" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView28"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView29"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView0"
+                android:layout_toEndOf="@+id/emojiTextView0" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView30"
+                android:layout_width="90dp"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/emojiTextView1"
+                android:layout_toEndOf="@+id/emojiTextView1" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_height="90dp"
+                app:emojiSize="85sp"
+                android:textSize="80sp"
+                android:id="@+id/emojiTextView"
+                android:layout_width="90dp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <com.azizinetwork.hajde.settings.LinearColorPickerView
+            android:layout_marginRight="33dp"
+            android:layout_marginEnd="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/lcpv_v"
+            app:showCursor="true"
+            app:cursorColor="@color/transparent"
+            app:showBorder="true"
+            app:borderWidth="2dp"
+            app:borderColor="@color/white"
+            app:isVertical="true"
+            android:layout_height="150dp"
+            android:layout_width="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_delete"
+            android:layout_width="45dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/edit_delete"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lcpv_v"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
